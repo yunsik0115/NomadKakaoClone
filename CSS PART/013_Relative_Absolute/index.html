@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /* Position -> 레이아웃보다는 위치를 아주 조금 옮기고 싶을 때 사용 */
+        body{
+            height : 100vh;
+            margin : 50px;
+        }
+        div{
+            width: 300px;
+            height : 300px;
+            background-color : wheat;
+        }
+        .green {
+            background-color: teal;
+            height : 100px;
+            width : 100px;
+            /* Green Div를 아주 조금 위로 놓고 싶다 */
+            position : relative; /* element가 처음 위치한 곳을 기준으로 수정 */
+            top : -10px;
+
+            /* position absolute : 특이한 점 -> 부모 요소가 아니라 body 기준으로 움직임
+            가장 가까운 relative가 적용되어 있는 부모를 기준으로 움직인다.*/
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <div class="green"></div>
+</div>
+</body>
+</html>
