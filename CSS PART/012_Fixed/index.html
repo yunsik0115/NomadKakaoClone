@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /* Position -> 레이아웃보다는 위치를 아주 조금 옮기고 싶을 때 사용 */
+        body{
+            height : 100vh;
+            margin : 20px;
+        }
+        div{
+            /* position : fixed; */
+            /* 스크롤을 해도 상단 부분에 그대로 유지되어 있다 */
+            width: 300px;
+            height : 300px;
+            color : white;
+            background-color : teal;
+        }
+
+        #different{
+
+            /* position: fixed; 여기에만 고정시 "초기 위치"에 고정된 부분에 그대로 유지됨*/
+            /* 원한다면 top : 5px; 코드를 적용해서 초기 위치를 설정할 수 있음 하나만 수정해도 초록색 위로 가게 되어잇음
+             block이던 margin이던 신경 안쓰고 다른 레이어에 있는 것.*/
+            background-color : wheat;
+
+        }
+
+        #green {
+            position :fixed;
+            background-color : teal;
+            opacity : 0.2;
+        }
+    </style>
+</head>
+<body>
+<div id="green"></div>
+<div id="different"></div>
+</body>
+</html>
