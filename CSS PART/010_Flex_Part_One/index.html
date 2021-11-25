@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    body{
+      margin:20px;
+      display : flex; /* 부모를 flex로 선언해줘야 div에 영향이 간다. */
+      justify-content: space-between;
+      height : 100vh; /* vh viewport height : screen 기준으로 얼마나 차지? */
+      /* align items */
+
+      /* flexbox - main axis / cross axis */
+      /* main axis - x축 cross axis - y축 */
+      /* justify content -> main axis
+        align items -> cross axis (cross axis is vertical , defaultly)
+         main axis can be changed and cross axis is always vertical to it.
+          body에 height가 없다면 align-items를 해도 변하지 않는다.
+          height를 설정해주거나 vh로 설정해주면 된다.
+          */
+    }
+    div{
+      width : 300px;
+      height : 300px;
+      background-color : teal;
+      }
+
+    #second {
+      background-color : wheat;
+    }
+    /* flexbox는 child 요소에는 사용하지 말아야 한다. 오직 부모에만 사용한다*/
+    /* 예를 들어 div 3개에 원하는게 있다면 body에 적어야 한다. */
+  </style>
+</head>
+<body>
+<div></div>
+<div id="second"></div>
+<div></div>
+</body>
+</html>
