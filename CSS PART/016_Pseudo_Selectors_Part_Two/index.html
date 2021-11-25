@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        body {
+            height: 100vh;
+            margin: 50px;
+        }
+
+        span{
+            background-color: yellowgreen;
+            padding : 5px;
+            border-radius : 10px;
+            text-decoration: underline;
+        }
+
+        p span { /* p 내부에 있는 span을 선택한다 */
+            color : white;
+            /* text-decoration: none; Not Elegance */
+        }
+
+        div > span {
+            /* div 바로 밑에 있는 span이여야 함 */
+        }
+
+        div + span {
+            /* div 옆에 있는 span을 원함 (바로 옆의)*/
+        }
+
+        div ~ span {
+            /* div 옆에 있지는 않지만 형제인 span을 원함 (형제, 같은 레벨의)*/
+        }
+        input:required {
+            /* input의 required 속성이 적용된 태그에 해당 */
+        }
+        input:optional {
+            /* input의 required 속성이 적용되어 있지 않은 태그에 해당 */
+        }
+
+        /* <a> elements with a title attribute */
+        a[title] {
+            color: purple;
+        }
+
+        /* <a> elements with an href matching "https://example.org" */
+        a[href="https://example.org"] {
+            color: green;
+        }
+
+        /* <a> elements with an href containing "example" */
+        a[href*="example"] {
+            font-size: 2em;
+        }
+
+        /* <a> elements with an href ending ".org" */
+        a[href$=".org"] {
+            font-style: italic;
+        }
+
+        /* <a> elements whose class attribute contains the word "logo" */
+        a[class~="logo"] {
+            padding: 2px;
+        }
+        /* https://developer.mozilla.org/ko/docs/Web/CSS/Attribute_selectors
+        *= is 'contains'
+        ~= is 'exactly' 앞뒤 공백이 있는 상태에서서/
+         */
+        </style>
+</head>
+<body>
+
+    <form action="">
+        <input type="text" placeholder="username"/>
+        <input type="text" required placeholder="password"/>
+    </form>
+
+</body>
+</html>
