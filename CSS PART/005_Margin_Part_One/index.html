@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - MY First Website.</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <style>
+
+      body {
+        margin : 20px 15px 12px 9px;
+        color : thistle;
+      }
+
+        div {
+            margin-left : 50px;
+            height: 150px;
+            width: 150px;
+            background-color: whitesmoke;
+          /* default characteristic of div is block */
+          /* The browser automatically gives block characteristic */
+          /* Also spacing, can view by the inspector provided by chrome */
+        }
+
+        /* If your element is inline - do not have height and a weight  */
+        /* Blocks do have a weight and height */
+        /* Inline : don't have weight, height its not a box */
+        /* Box : margin, padding, border */
+        /* margin : box의 border 바깥의 경계 */
+        /* padding :  */
+
+        span { /* basically span (display : inline) */
+          /* Difference between inline and block */
+            /* display : inline; default characteristics of span*/
+            display : block;
+            background-color : turquoise;
+        }
+    </style>
+</head>
+<body>
+  <div></div>
+  <span>Hello</span>
+  <!-- Can We turn block in to inline or vice versa? -->
+  <!-- Yes by applying display options in css! -->
+</body>
+</html>
