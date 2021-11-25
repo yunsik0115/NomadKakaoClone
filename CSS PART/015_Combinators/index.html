@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+
+    body {
+      height: 100vh;
+      margin: 50px;
+    }
+
+    span{
+      background-color: yellowgreen;
+      padding : 5px;
+      border-radius : 10px;
+      text-decoration: underline;
+    }
+
+    p span { /* p 내부에 있는 span을 선택한다 */
+      color : white;
+      /* text-decoration: none; Not Elegance */
+    }
+
+    div > span {
+      /* div 바로 밑에 있는 span이여야 함 */
+    }
+
+    div + span {
+      /* div 옆에 있는 span을 원함 (형제, 같은 레벨의)*/
+    }
+
+  </style>
+</head>
+<body>
+
+  <span>Hello</span>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing <span>elit.</span></p>
+
+</body>
+</html>
