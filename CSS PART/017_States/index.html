@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        body {
+            height: 100vh;
+            margin: 50px;
+        }
+
+
+        button:active{
+            /* button 클릭시 */
+            background-color: tomato;
+        }
+
+        button:hover{
+            /* button 위에 커서 올려둘 시시 */
+           background-color: yellowgreen;
+        }
+
+        button:focus{
+            /* selected 되었을 경우 */
+            background-color: magenta;
+        }
+
+        a:visited{
+            background-color: purple;
+        }
+        /* focused within은 focused인 자식을 가진 부모 요소를 뜻한다 */
+        /* 하나라도 Focused 되면 부모 요소 전체에 영향을 준다는 말!*/
+        /*     ::placeholder = placeholder를 직접 꾸밀 수 있게 해준다. (조건을 적용하는 : 과 차이)
+               ::selection = 드래그해서 블럭했을 때 꾸밀 수 있음.
+               ::firstletter = 첫 문자만 꾸민다.
+               ::first line = 첫 번째 줄만 구민다.*/
+    </style>
+</head>
+<body>
+
+    <div>
+        <button>Hello</button>
+    </div>
+    <div>
+
+        <input type="text"/><input type="text"/>></div>
+    <div>
+        <a href="https://www.google.com">google</a>
+    </div>
+</body>
+</html>
+
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties 변수 관련 문서 -->

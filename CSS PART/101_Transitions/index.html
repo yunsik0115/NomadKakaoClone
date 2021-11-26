@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>The Nico Times</title>
+    <style>
+        a{
+            color : wheat;
+            background-color: tomato;
+            text-decoration: none;
+            padding: 3px 5px;
+            border-radius: 5px;
+            font-size: 55px;
+            /* 변하기 까지 걸리는 시간 */
+            transition: background-color 10s ease-in-out, color 5s ease-in-out;
+        }
+        a:hover{
+            color : tomato;
+            background-color: wheat;
+        }
+        /* transition one state to another */
+        /* ease in -> 시작점에서 점점 빨라짐 , ease out -> 끝점에서 빨라짐, linear -> 무언가를 일정한 속도로  ease-in-out 중간에서 최고속도*/
+    </style>
+</head>
+<body>
+    <a href="#">Go Home</a>
+</body>
+</html>
