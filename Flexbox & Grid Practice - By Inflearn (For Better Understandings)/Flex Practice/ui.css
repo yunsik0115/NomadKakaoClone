@@ -1,0 +1,30 @@
+/* menu */
+.menu {
+    display: flex;
+
+}
+.menu-item {
+    width : 25%;
+    background: gold;
+    transition: 0.5s ease-in-out;
+}
+
+.menu-item:hover{
+    width : 35%;
+    background: crimson;
+
+}
+
+.menu-link {
+    display: block; /* a tag -> inline 나머지 부분으로 가면 클릭이 안됨 블럭으로 바꿔야 맞음 */
+    padding: 1em; /* font size만큼 padding을 주겠다 */
+    font-size: 1.2rem; /* 루트 기본 요소의 1.2배를 사용하겠다 */
+    font-weight: bold;
+    color: #555;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menu-link:hover{
+    color:white
+}

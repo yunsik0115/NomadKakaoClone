@@ -1,0 +1,43 @@
+1. 기본 HTML 구조
+부모 - Flex Container
+자식 - Flex Item
+
+<div class="container"> -> Container가 전체 Flex Layout을 관장하는 영역
+그 안에서 각 item들이 flex의 규칙에 따라서 배치가 된다!
+	<div class="item">helloflex</div>
+	<div class="item">abc</div>
+	<div class="item">helloflex</div>
+</div>
+
+그림은 https://studiomeal.com/archives/197 을 참고하자 자세한 사진이 나와있다.
+
+1) display : flex; = 컨테이너에 디스플레이 속성을 flex로 지정하는것으로 시작한다.
+Block Element인 div들이 inline인 것 처럼 나란히 배치가 된다
+차지하고 있는 폭도 꽉 차있던 것이 각자 가진 content만큼만 늘어난다.
+Inline이나 Inline-block보다는 float와 비슷하다. (빈틈이 없음)
+
+Float - 두개의 컬럼이 자기가 포함하고 있는 컨텐츠의 높이 만큼만 늘어남
+Flex - 두 개의 칼럼의 높이가 동등하도록 맞춰짐 (똑같이 늘어남)
+
+Inline-flex -> block과  inline-block 사이의 관계라고 생각하면 된다.
+inline-flex -> 자기가 가진 내용물 만큼만 차지함. 옆으로 나란히 붙게 된다
+
+display : flex를 적용했을 때 축에 대한 이해가 필요하다
+Main Axis - 메인축
+Cross Axis - 메인축과 수직이 되는 축 (X축 Y축 아님) -> 축의 방향을 바꿀 수도 있기 때문
+Main축이 꼬챙이라고 생각하자, 꼬챙이에 꽃혀진 대로 화면상에도 나타난다고 생각하자.
+
+2) flex-direction 속성을 통해 아이템 축의 방향을 변경할 수 있다.
+Row -> 디폴트
+Column -> 메인축의 방향이 Y축으로 변하고 Cross-axis가 X축으로 변한다
+Row-reverse : 배치의 방향이 row와 반대로 된다
+Column-reverse : 배치의 방향이 column과 반대로 된다.
+
+3) flex-wrap
+컨테이너가 더 이상 아이템을 한 줄에 담을 여유가 없을 때 아이템 줄 바꿈을 어떻게 할 것인지 결정하는 속성
+No-Wrap : 브라우저 축소시 가려진다. (옆으로 줄이면 그대로 사라진다)
+Wrap : 어떻게 해서든 화면상에 표시된다.
+Wrap-Reverse -> 끝에거 부터 말아 올라감
+
+4) flex-flow : flex-direction + flex-wrap 한꺼번에 지정 가능
+.container flex-flow:row wrap;

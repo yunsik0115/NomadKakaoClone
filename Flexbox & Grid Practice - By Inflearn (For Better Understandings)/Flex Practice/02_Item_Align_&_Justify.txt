@@ -1,0 +1,32 @@
+꼬챙이를 기억하자
+justify - Main 축 위에서 오뎅들을 정렬하는 거라고 생각하자
+Align - Cross 축 방향으로 오뎅들을 뜯어내는 거라고 생각하자
+
+Grid에서 더 많이 나온다 justify align의 개념을 제대로 이해하자
+
+justify-content
+1) flex-start -> 아이템들을 main축 위의 시작점으로 정렬한다(오뎅꼬치의 시작점) / reverse인 경우 반대임
+2) flex-end -> 아이템들을 main축 위의 종점으로 정렬한다(오뎅꼬치의 종점) / reverse인 경우 반대임
+3) space-between -> 아이템들을 main 축 양 끝에 붙이고 공간을 균일하게 갖는다
+4) space-around -> 아이템 주변에 (main축 기준) 공간을 충분히 갖는다.
+5) space-evenly -> around와 차이가 있다 (모든 여백이 전부 동일하다) (MS브라우저 엣지 익스플로러 -> 지원 안됨)
+
+flex는 항상 column이 최대인 요소에 맞춰 다른 요소들이 맞춰짐
+
+align-items (justify content의 축과 수직인 방향을 기준)
+1) stretch : 기본값 (쭉 늘려주는 애다)
+float로 만든 다단컬럼 레이아웃과의 차이가 위 아래로 쭉 늘어나는 것임(같은 items면 최대값을 따라감 전부)
+2) flex-start: 위로 붙는다
+3) flex-end : 아래로
+4) center : 가운데
+5) baseline : 영 단어장의 빨간줄을 생각하자. 그 라인을 기준으로 정렬한다.
+
+여러 행 정렬
+align-content (Flex 아이템들이 두번째 세번째 여러줄로 생겼을 때 즉, flex-wrap : wrap으로 설정된 상태인 경우)
+cross 축 방향을 어떻게 적용할 것인가
+stretch : 쭉 늘어나있다 (아래로 떨어짐) /기본값
+flex-start : flex-start -> 메인축의 방향 시작점
+flex-end : flex ed 메인축의 끝점
+space between : 여백 없이 위 아래 꽉 차고 사이 공간 고르게
+space around : 각각 아이템의 둘레에 균일한 공간 갖는다
+space evenly : 완전 균일하게
