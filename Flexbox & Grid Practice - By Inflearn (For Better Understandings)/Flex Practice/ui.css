@@ -4,6 +4,7 @@
 
 }
 .menu-item {
+    /*flex-grow: 1;*/
     width : 25%;
     background: gold;
     transition: 0.5s ease-in-out;
@@ -11,8 +12,9 @@
 
 .menu-item:hover{
     width : 35%;
+    /*flex-grow: 1.5;*/
     background: crimson;
-
+    /* 이 상황은 width가 낫다 익스플로러 호환이 안된다 */
 }
 
 .menu-link {
