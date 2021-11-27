@@ -41,6 +41,7 @@
     text-decoration: none;
     color : black;
     font-weight: bold;
+    display: block;
 }
 
 .menu-link:hover{
@@ -68,3 +69,53 @@
     background: white;
 }
 
+.side{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-left{
+    background-color: white;
+}
+
+.main-right{
+    background-color: gray;
+}
+
+.friend-list{
+    margin-bottom: 10px;
+}
+
+.message-list{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.friend-item, .message-item{
+    display:flex;
+}
+
+.friend_desc{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.message-desc{
+    color:white;
+    flex-grow: 1;
+}
+
+.friend-img{
+    width: 50px;
+    height: 50px;
+    margin-right: 0.5em;
+    border: 2px solid #333;
+    border-radius: 50%;
+    background-color: gold;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150%;
+    flex-shrink: 0;
+}
