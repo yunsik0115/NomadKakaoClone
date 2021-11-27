@@ -1,0 +1,42 @@
+@media (min-width: 1024px) {
+    .page {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header {
+        width: 100%;
+    }
+    .menu-items {
+        width: 100%;
+    }
+    .primary-list {
+        order: 2;
+        width: 60%;
+    }
+    .side {
+        width: 20%;
+    }
+    .main-left {
+        order: 1;
+    }
+    .main-right {
+        order: 3;
+    }
+    .footer {
+        order: 4;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .primary-list {
+        width: calc(100% - 600px);
+        /* flex-grow: 1; */
+        /* flex: 1 1 auto; */
+        /* flex: auto; */
+    }
+    .side {
+        width: 300px;
+    }
+}
+
