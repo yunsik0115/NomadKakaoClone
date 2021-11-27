@@ -81,3 +81,11 @@
 .user-item{
     display:flex;
 }
+
+/* friend list */
+.user-name{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+     /* 말 줄임표 처리 문장 줄 넘김이 안되게 하는 3요소임, 외워두면 좋음 */
+}
