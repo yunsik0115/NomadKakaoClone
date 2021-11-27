@@ -1,58 +1,53 @@
-/* header */
-.header {
-    display : flex;
-    padding: 0 1rem;
-    align-items: center;
-}
-
-.main-name{
-    margin-left: 10px;
-}
-
-.search-form{
-    margin-left : auto;
-    width : 300px;
-    max-width: 60%;
-}
-
-.search-form:after{
-    content : '⚑';
-}
-
-
-.menu-items {
+/* search */
+.search-form {
     display: flex;
-    padding-bottom: 10px;
+    height: 40px;
+    margin-left : auto;
 }
+.search-form input[type="search"] {
+    flex: 1;
+    min-width: 0;
+    /* 0 밑으로 작아지게 하고 싶지 않다 */
+    margin-right: 10px;
+    border: 0;
+    border-radius: 0.3em;
+    font-size: 1rem;
+}
+.search-form input[type="submit"] {
+    width: 4em;
+    border: 0;
+    border-radius: 0.3em;
+    font-size: 1rem;
+    background: gold;
+}
+
 
 .menu-item {
-    width: 25%;
+    width : 25%;
+    font-size: 1.2rem;
+    padding : 1em;
+    flex-grow : 1;
     text-align : center;
-    background-color: yellow;
-    transition : 0.5s ease-in-out;
+    background-color: gold;
+    transition: 0.5s ease-in-out;
 }
 
 .menu-item:hover{
     width: 35%;
-    background-color:crimson;
+    background-color: crimson;
 }
 
-.menu-link {
-    display : block;
-    padding: 1em;
-    text-decoration : none;
-    font-weight : bold;
+.menu-link{
+    text-decoration: none;
+    color : black;
+    font-weight: bold;
 }
 
 .menu-link:hover{
     color:white;
 }
 
-.primary-list {
-    display : flex;
-}
-
-/* card list */
+/* primary cards container */
 .post-item {
     display: flex;
     flex-direction: column;
@@ -66,26 +61,10 @@
     background-position: center;
     background-size: cover;
 }
+
 .desc {
     flex: 1 1 auto;
     padding: 1em;
     background: white;
 }
 
-@media (min-width: 600px) {
-    .post-list {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 -1rem;
-    }
-    .post-item {
-        width: 50%;
-        padding: 0 1rem;
-    }
-}
-
-@media (min-width: 1200px) {
-    .post-item {
-        width: 33.33333%;
-    }
-}
