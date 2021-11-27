@@ -89,3 +89,24 @@
     white-space: nowrap;
      /* 말 줄임표 처리 문장 줄 넘김이 안되게 하는 3요소임, 외워두면 좋음 */
 }
+
+/* modal */
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right : 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+}
+
+.dialog{
+    width: 50vw;
+    padding: 2em;
+    border-radius: 1em;
+    background: white;
+
+}
