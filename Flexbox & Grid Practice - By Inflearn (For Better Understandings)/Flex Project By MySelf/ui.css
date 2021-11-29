@@ -75,15 +75,31 @@
 }
 
 .main-left{
+    padding: 16px;
     background-color: white;
 }
 
 .main-right{
+    padding: 16px;
     background-color: gray;
 }
 
 .friend-list{
     margin-bottom: 10px;
+}
+
+.info-list{
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0;
+}
+
+.info-item:before{
+    content : '※';
+}
+
+.info-item{
+    margin : 8px 0px;
 }
 
 .message-list{
@@ -92,8 +108,14 @@
     margin-bottom: 10px;
 }
 
+.friend-item{
+    align-items: center;
+    margin: 0 0 24px;
+}
+
 .friend-item, .message-item{
     display:flex;
+    margin : 8px 0px;
 }
 
 .friend_desc{

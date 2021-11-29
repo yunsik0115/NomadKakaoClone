@@ -11,6 +11,16 @@
     display: flex;
 }
 
+.primary-cards-container{
+    padding: 16px;
+}
+
+.footer{
+    border : 1px solid lightgray;
+    padding : 16px;
+    text-align : center;
+}
+
 @media (min-width: 1024px) {
     .page {
         display: flex;
