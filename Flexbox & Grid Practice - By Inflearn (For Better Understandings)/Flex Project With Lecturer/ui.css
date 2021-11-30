@@ -1,0 +1,158 @@
+/* menu */
+.menu {
+    display: flex;
+
+}
+.menu-item {
+    /*flex-grow: 1;*/
+    width : 25%;
+    background: gold;
+    transition: 0.5s ease-in-out;
+}
+
+.menu-item:hover{
+    width : 35%;
+    /*flex-grow: 1.5;*/
+    background: crimson;
+    /* 이 상황은 width가 낫다 익스플로러 호환이 안된다 */
+}
+
+.menu-link {
+    display: block; /* a tag -> inline 나머지 부분으로 가면 클릭이 안됨 블럭으로 바꿔야 맞음 */
+    padding: 1em; /* font size만큼 padding을 주겠다 */
+    font-size: 1.2rem; /* 루트 기본 요소의 1.2배를 사용하겠다 */
+    font-weight: bold;
+    color: #555;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menu-link:hover{
+    color:white
+}
+
+/* search */
+.search-form{
+    display: flex;
+    height : 40px;
+}
+
+.search-form input[type='search']{
+    flex : 1;
+    margin-right: 10px;
+    border : 0;
+    border-radius: 0.3em;
+    font-size: 1rem;
+}
+
+.search-form input[type='submit']{
+    width: 4em;
+    border : 0;
+    border-radius: 0.3em;
+    font-size: 1rem;
+    background: gold;
+}
+
+/* bullet list 사과와 text를 flex로 배치하자 */
+.info-list-item{
+    display: flex;
+    margin : 0.5em 0;
+}
+.info-list-item:before {
+    /* copychar.cc */
+    content: '🍎';
+    margin-right: 0.5em;
+}
+
+/* message */
+.user-photo{
+    width: 50px;
+    height: 50px;
+    margin-right: 0.5em;
+    border: 2px solid #333;
+    border-radius: 50%;
+    background-color: gold;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150%;
+    flex-shrink: 0;
+}
+
+.user-item{
+    display:flex;
+}
+
+/* friend list */
+.user-name{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* 말 줄임표 처리 문장 줄 넘김이 안되게 하는 3요소임, 외워두면 좋음 */
+}
+
+/* modal */
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right : 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+}
+
+.dialog{
+    width: 50vw;
+    padding: 2em;
+    border-radius: 1em;
+    background: white;
+}
+/* card list */
+.card-item{
+    display: flex;
+    flex-direction:column;
+    margin-bottom: 2rem;
+}
+
+.card-image{
+    height: 0;
+    padding-bottom: 60%;
+    background-color: lightgray;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-image img{
+    display: none;
+}
+
+.card-desc{
+    flex: auto;
+    padding: 1em;
+    background: white;
+}
+
+@media(min-width: 600px){
+    .card-list-con{
+        overflow-x : hidden;
+    }
+    .card-list{
+        display:flex;
+        flex-wrap: wrap;
+        margin: 0 -1rem;
+    }
+    .card-item{
+        width: 50%;
+        padding: 0 1rem;
+    }
+}
+
+@media(min-width: 1200px)
+{
+    .card-item{
+        width : 33.3333%;
+    }
+}
