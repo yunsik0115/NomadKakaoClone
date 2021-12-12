@@ -1,8 +1,22 @@
 .nav{
+    position:fixed;
+    bottom: 0;
     background-color: #f9f9fa;
-    padding: 20px 40px;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    /* padding 준 부분은 사용불가, padding 준 만큼 박스가 늘어남 */
+    /* 좌우로 모두 padding을 주어 그만큼 사이즈가 늘어남 */
+    /* box-sizing border-box를 설정하면 box 사이즈를 변경하지 않도록 설정해줌. */
+    /* 그 대신 content 내용물이 줄어들 것임 */
+    border-top: 1px solid rgba(121,121,121, 0.3);
+
 }
 .nav__list {
     display: flex;
+    flex-grow: 1;
     justify-content: space-between;
+}
+
+.nav__link{
+    color : #2e363e;
 }

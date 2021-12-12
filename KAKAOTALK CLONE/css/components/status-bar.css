@@ -1,4 +1,7 @@
 .status-bar{
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     /* justify content 대신 center 쓰자 (잘안맞다 간격이)*/
